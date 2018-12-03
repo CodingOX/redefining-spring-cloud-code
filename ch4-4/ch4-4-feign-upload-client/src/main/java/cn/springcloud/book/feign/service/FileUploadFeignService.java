@@ -22,6 +22,6 @@ public interface FileUploadFeignService {
     @RequestMapping(method = RequestMethod.POST, value = "/uploadFile/server",
             produces = {MediaType.APPLICATION_JSON_UTF8_VALUE},
             consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public  String fileUpload(@RequestPart(value = "file") MultipartFile file);
+    String fileUpload(@RequestPart(value = "file") MultipartFile file);
 
 }

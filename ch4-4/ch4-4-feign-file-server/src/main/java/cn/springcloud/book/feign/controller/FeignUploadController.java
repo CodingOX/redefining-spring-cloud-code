@@ -10,6 +10,7 @@ public class FeignUploadController {
 
     @PostMapping(value = "/uploadFile/server", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public String fileUploadServer(MultipartFile file ) throws Exception{
+        //此处仅仅输出文件的名称
         return file.getOriginalFilename();
     }
 

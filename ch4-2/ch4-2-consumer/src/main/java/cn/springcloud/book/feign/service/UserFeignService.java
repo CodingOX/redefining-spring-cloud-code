@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UserFeignService {
 
     @RequestMapping(value = "/feign", method = RequestMethod.GET)
-    public String helloFeign();
+    String helloFeign();
 
     /**
-     *
      * feign请求结果是一个图片流，怎么接收
      * 生成图片验证码
+     *
      * @param imagekey
      * @return
      */
     @RequestMapping(value = "createImagesCode")
-    public Response createImageCode(@RequestParam("imagekey") String imagekey);
+    Response createImageCode(@RequestParam("imagekey") String imagekey);
 
 }

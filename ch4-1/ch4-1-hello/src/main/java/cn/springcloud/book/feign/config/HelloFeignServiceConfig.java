@@ -18,7 +18,7 @@ public class HelloFeignServiceConfig {
      */
     @Bean
     Logger.Level feignLoggerLevel() {
-        return Logger.Level.FULL;
+        return Logger.Level.BASIC;
     }
 
 }

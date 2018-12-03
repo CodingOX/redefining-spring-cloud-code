@@ -16,7 +16,6 @@ public class HelloFeignController {
     @GetMapping(value = "/search/github")
     public String searchGithubRepoByStr(@RequestParam("str") String queryStr) {
         return helloFeignService.searchRepo(queryStr);
-
     }
 
 }
